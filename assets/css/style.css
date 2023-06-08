@@ -82,8 +82,11 @@ section_1 {
 
 .section_1 {
   padding: 4rem 0;
-  background: linear-gradient(-45deg, rgba(127,105,81,1), rgba(220,207,102,1));
-  color: #323232;
+  height: 560px;
+  background-image: url("../img/perfume-bottle-golden-bokeh_160204-64.avif");
+  background-size: cover;
+  background-position: center;
+  color: white;
 }
 
 .section-heading {
@@ -935,6 +938,11 @@ section_1 {
   position: relative;
 }
 
+.iphone-wrap1 {
+  position: relative;
+}
+
+
 @media screen and (max-width: 992px) {
   .hero-section .iphone-wrap {
     text-align: center;
@@ -947,14 +955,28 @@ section_1 {
   top: -50%;
   overflow: hidden;
   left: 0;
-  box-shadow: 0 15px 50px 0 rgba(0, 0, 0, 0.3);
-  border-radius: 30px;
+
+}
+.iphone-wrap1 .phone-2,
+.iphone-wrap1 .phone-1 {
+  position: absolute;
+ 
+  overflow: hidden;
+  left: 0;  
+
 }
 
 @media screen and (max-width: 992px) {
 
   .hero-section .iphone-wrap .phone-2,
   .hero-section .iphone-wrap .phone-1 {
+    position: relative;
+    top: 0;
+    max-width: 100%;
+  }
+
+ .iphone-wrap1 .phone-2,
+ .iphone-wrap1 .phone-1 {
     position: relative;
     top: 0;
     max-width: 100%;
@@ -966,8 +988,16 @@ section_1 {
   width: 250px;
 }
 
+.iphone-wrap1 .phone-2,
+.iphone-wrap1 .phone-1 {
+  width: 250px;
+}
+
 @media screen and (max-width: 992px) {
   .hero-section .iphone-wrap .phone-1 {
+    margin-left: -150px;
+  }
+.iphone-wrap1 .phone-1 {
     margin-left: -150px;
   }
 }
@@ -978,8 +1008,20 @@ section_1 {
   width: 250px;
 }
 
+.iphone-wrap1 .phone-2 {
+  margin-top: 50px;
+  margin-left: 100px;
+  width: 250px;
+}
+
 @media screen and (max-width: 992px) {
   .hero-section .iphone-wrap .phone-2 {
+    width: 250px;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 100px;
+  }
+ .iphone-wrap1 .phone-2 {
     width: 250px;
     position: absolute;
     margin-top: 0px;
